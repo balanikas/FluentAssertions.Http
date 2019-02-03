@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertions.Http", "FluentAssertions.Http\FluentAssertions.Http.csproj", "{630FA986-27F3-44F6-9A0C-C26CC8E73CF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAssertions.Http", "FluentAssertions.Http\FluentAssertions.Http.csproj", "{630FA986-27F3-44F6-9A0C-C26CC8E73CF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertions.Http.Test", "FluentAssertions.Http.Test\FluentAssertions.Http.Test.csproj", "{2DDA95D6-1A14-4CE3-8939-6906A01EEAC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAssertions.Http.Test", "FluentAssertions.Http.Test\FluentAssertions.Http.Test.csproj", "{2DDA95D6-1A14-4CE3-8939-6906A01EEAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication", "SampleApplication\SampleApplication.csproj", "{C25D0DD8-D239-4299-B648-16BAC41DB466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTests.Core", "XUnitTests.Core\XUnitTests.Core.csproj", "{05B4E55C-F985-4312-861F-828D8AC885CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{2DDA95D6-1A14-4CE3-8939-6906A01EEAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DDA95D6-1A14-4CE3-8939-6906A01EEAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DDA95D6-1A14-4CE3-8939-6906A01EEAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25D0DD8-D239-4299-B648-16BAC41DB466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25D0DD8-D239-4299-B648-16BAC41DB466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25D0DD8-D239-4299-B648-16BAC41DB466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25D0DD8-D239-4299-B648-16BAC41DB466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B4E55C-F985-4312-861F-828D8AC885CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B4E55C-F985-4312-861F-828D8AC885CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B4E55C-F985-4312-861F-828D8AC885CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B4E55C-F985-4312-861F-828D8AC885CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

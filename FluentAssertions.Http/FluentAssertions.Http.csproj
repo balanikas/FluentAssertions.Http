@@ -3,9 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Kristoffer Balanikas</Authors>
-    <Company>ristoffer Balanikas</Company>
-    <PackageId>FluentAssertions.Http_Kristoffer_Balanikas</PackageId>
-    <PackageTags>fluentassertions, httpresponsemessage, testing</PackageTags>
+    <Company>Kristoffer Balanikas</Company>
+    <PackageId>FluentAssertions.Http</PackageId>
+    <PackageTags>fluentassertions, httpresponsemessage, integrationtest</PackageTags>
+    <Version>1.0.0-beta1</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/balanikas/FluentAssertions.Http</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/balanikas/FluentAssertions.Http</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
