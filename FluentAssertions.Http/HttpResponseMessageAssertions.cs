@@ -8,32 +8,56 @@ using FluentAssertions.Primitives;
 
 namespace FluentAssertions.Http
 {
-    public class HttpResponseMessageAssertions : ReferenceTypeAssertions<HttpResponseMessage, HttpResponseMessageAssertions>
+    public class
+        HttpResponseMessageAssertions : ReferenceTypeAssertions<HttpResponseMessage, HttpResponseMessageAssertions>
     {
-        public HttpResponseMessageAssertions(HttpResponseMessage instance) => Subject = instance;
+        public HttpResponseMessageAssertions(HttpResponseMessage instance)
+        {
+            Subject = instance;
+        }
 
         protected override string Identifier => "HttpResponseMessage";
 
-        public AndConstraint<HttpResponseMessageAssertions> HaveStatusCode(HttpStatusCode statusCode) => HttpStatusAssertion(statusCode);
-
-        public AndConstraint<HttpResponseMessageAssertions> HaveInformationalStatusCode() => IsInRange(HttpStatusCode.Continue, HttpStatusCode.SwitchingProtocols);
-
-        public AndConstraint<HttpResponseMessageAssertions> HaveSuccessStatusCode() => IsInRange(HttpStatusCode.OK, HttpStatusCode.PartialContent);
-
-        public AndConstraint<HttpResponseMessageAssertions> HaveRedirectionStatusCode() => IsInRange(HttpStatusCode.Ambiguous, HttpStatusCode.TemporaryRedirect);
-
-        public AndConstraint<HttpResponseMessageAssertions> HaveClientErrorStatusCode() => IsInRange(HttpStatusCode.BadRequest, HttpStatusCode.UpgradeRequired);
-
-        public AndConstraint<HttpResponseMessageAssertions> HaveServerErrorStatusCode() => IsInRange(HttpStatusCode.InternalServerError, HttpStatusCode.HttpVersionNotSupported);
-
-        AndConstraint<HttpResponseMessageAssertions> IsInRange(HttpStatusCode statusCodeBegin, HttpStatusCode statusCodeEnd)
+        public AndConstraint<HttpResponseMessageAssertions> HaveStatusCode(HttpStatusCode statusCode)
         {
-            var query = ((HttpStatusCode[]) Enum.GetValues(typeof(HttpStatusCode))).Where(x => x >= statusCodeBegin && x <= statusCodeEnd);
+            return HttpStatusAssertion(statusCode);
+        }
+
+        public AndConstraint<HttpResponseMessageAssertions> HaveInformationalStatusCode()
+        {
+            return IsInRange(HttpStatusCode.Continue, HttpStatusCode.SwitchingProtocols);
+        }
+
+        public AndConstraint<HttpResponseMessageAssertions> HaveSuccessStatusCode()
+        {
+            return IsInRange(HttpStatusCode.OK, HttpStatusCode.PartialContent);
+        }
+
+        public AndConstraint<HttpResponseMessageAssertions> HaveRedirectionStatusCode()
+        {
+            return IsInRange(HttpStatusCode.Ambiguous, HttpStatusCode.TemporaryRedirect);
+        }
+
+        public AndConstraint<HttpResponseMessageAssertions> HaveClientErrorStatusCode()
+        {
+            return IsInRange(HttpStatusCode.BadRequest, HttpStatusCode.UpgradeRequired);
+        }
+
+        public AndConstraint<HttpResponseMessageAssertions> HaveServerErrorStatusCode()
+        {
+            return IsInRange(HttpStatusCode.InternalServerError, HttpStatusCode.HttpVersionNotSupported);
+        }
+
+        private AndConstraint<HttpResponseMessageAssertions> IsInRange(HttpStatusCode statusCodeBegin,
+            HttpStatusCode statusCodeEnd)
+        {
+            var query = ((HttpStatusCode[])Enum.GetValues(typeof(HttpStatusCode))).Where(x =>
+                x >= statusCodeBegin && x <= statusCodeEnd);
             query.Should().Contain(Subject.StatusCode);
             return new AndConstraint<HttpResponseMessageAssertions>(this);
         }
 
-        AndConstraint<HttpResponseMessageAssertions> HttpStatusAssertion(HttpStatusCode statusCode)
+        private AndConstraint<HttpResponseMessageAssertions> HttpStatusAssertion(HttpStatusCode statusCode)
         {
             Subject.StatusCode.Should().Be(statusCode);
             return new AndConstraint<HttpResponseMessageAssertions>(this);
@@ -51,13 +75,15 @@ namespace FluentAssertions.Http
             return new AndConstraint<HttpResponseMessageAssertions>(this);
         }
 
-        public AndConstraint<HttpResponseMessageAssertions> HaveContent<T>(T expected, Func<EquivalencyAssertionOptions<T>, EquivalencyAssertionOptions<T>> options)
+        public AndConstraint<HttpResponseMessageAssertions> HaveContent<T>(T expected,
+            Func<EquivalencyAssertionOptions<T>, EquivalencyAssertionOptions<T>> options)
         {
             Subject.GetContentAs<T>().Should().BeEquivalentTo(expected, options);
             return new AndConstraint<HttpResponseMessageAssertions>(this);
         }
 
-        public AndConstraint<HttpResponseMessageAssertions> HaveContentWithProperty<T>(Func<T, object> subject, object expected)
+        public AndConstraint<HttpResponseMessageAssertions> HaveContentWithProperty<T>(Func<T, object> subject,
+            object expected)
         {
             subject.Invoke(Subject.GetContentAs<T>()).Should().BeEquivalentTo(expected);
             return new AndConstraint<HttpResponseMessageAssertions>(this);
@@ -66,13 +92,9 @@ namespace FluentAssertions.Http
         public AndConstraint<HttpResponseMessageAssertions> HaveHeader(string headerName, string expected)
         {
             if (Subject.Headers.TryGetValues(headerName, out var values))
-            {
                 values.Should().Contain(expected);
-            }
             else
-            {
                 Enumerable.Empty<string>().Should().Contain(expected);
-            }
 
             return new AndConstraint<HttpResponseMessageAssertions>(this);
         }
@@ -107,7 +129,8 @@ namespace FluentAssertions.Http
             return new AndConstraint<HttpResponseMessageAssertions>(this);
         }
 
-        public AndConstraint<HttpResponseMessageAssertions> HaveHeaderForTransferEncoding(TransferCodingHeaderValue expected)
+        public AndConstraint<HttpResponseMessageAssertions> HaveHeaderForTransferEncoding(
+            TransferCodingHeaderValue expected)
         {
             Subject.Headers.TransferEncoding.Should().Contain(expected);
             return new AndConstraint<HttpResponseMessageAssertions>(this);

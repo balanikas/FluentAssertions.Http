@@ -1,104 +1,105 @@
 using System;
-using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Xunit;
 using Xunit.Sdk;
 
-namespace FluentAssertions.Http.Test
+namespace FluentAssertions.Http.Test;
+
+public class HttpResponseMessageAssertionsTest_Content
 {
-    public class HttpResponseMessageAssertionsTest_Content
+    private readonly HttpResponseMessage _subject;
+
+    public HttpResponseMessageAssertionsTest_Content()
     {
-        [Fact]
-        public void HaveContent_WhenExpectedNotToFail_ShouldNotFail()
-        {
-            _subject.Content = new StringContent("content");
+        _subject = new HttpResponseMessage();
+    }
 
-            _subject.Should().HaveContent("content");
-        }
+    [Fact]
+    public void HaveContent_WhenExpectedNotToFail_ShouldNotFail()
+    {
+        _subject.Content = new StringContent("content");
 
-        [Fact]
-        public void HaveContent_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.Content = new StringContent("content");
+        _subject.Should().HaveContent("content");
+    }
 
-            Action act = () => _subject.Should().HaveContent("ont");
+    [Fact]
+    public void HaveContent_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.Content = new StringContent("content");
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveContent("ont");
 
-        [Fact]
-        public void HaveTypedContent_WhenExpectedNotToFail_ShouldNotFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveContent(expectedContent);
-        }
+    [Fact]
+    public void HaveTypedContent_WhenExpectedNotToFail_ShouldNotFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-        [Fact]
-        public void HaveTypedContent_WhenExpectedToFail_ShouldFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        _subject.Should().HaveContent(expectedContent);
+    }
 
-            Action act = () => _subject.Should().HaveContent(new ModelA {StringProperty = "string", IntProperty = 2});
+    [Fact]
+    public void HaveTypedContent_WhenExpectedToFail_ShouldFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveContent(new ModelA { StringProperty = "string", IntProperty = 2 });
 
-        [Fact]
-        public void HaveTypedContentWithEquivalencyOptions_WhenExpectedNotToFail_ShouldNotFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 }, options => options.Including(x => x.IntProperty));
-            _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 }, options => options.Excluding(x => x.StringProperty));
-        }
+    [Fact]
+    public void HaveTypedContentWithEquivalencyOptions_WhenExpectedNotToFail_ShouldNotFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-        [Fact]
-        public void HaveTypedContentWithEquivalencyOptions_WhenExpectedToFail_ShouldFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 },
+            options => options.Including(x => x.IntProperty));
+        _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 },
+            options => options.Excluding(x => x.StringProperty));
+    }
 
-            Action act = () => _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 }, options => options.Including(x => x.StringProperty));
+    [Fact]
+    public void HaveTypedContentWithEquivalencyOptions_WhenExpectedToFail_ShouldFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 },
+            options => options.Including(x => x.StringProperty));
 
-        [Fact]
-        public void HaveContentWithProperty_WhenExpectedNotToFail_ShouldNotFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 1);
-        }
+    [Fact]
+    public void HaveContentWithProperty_WhenExpectedNotToFail_ShouldNotFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-        [Fact]
-        public void HaveContentWithProperty_WhenExpectedToFail_ShouldFail()
-        {
-            var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
-            _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
+        _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 1);
+    }
 
-            Action act = () => _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 2);
+    [Fact]
+    public void HaveContentWithProperty_WhenExpectedToFail_ShouldFail()
+    {
+        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 2);
 
-        readonly HttpResponseMessage _subject;
+        act.Should().Throw<XunitException>();
+    }
 
-        public HttpResponseMessageAssertionsTest_Content()
-        {
-            _subject = new HttpResponseMessage();
-        }
-
-        class ModelA
-        {
-            public string StringProperty { get; set; }
-            public int IntProperty { get; set; }
-        }
+    private class ModelA
+    {
+        public string StringProperty { get; set; }
+        public int IntProperty { get; set; }
     }
 }

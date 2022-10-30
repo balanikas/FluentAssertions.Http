@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using SampleApplication.RestModels;
 
-namespace SampleApplication.Controllers
+namespace SampleApplication.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+public class CustomersController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CustomersController : ControllerBase
+    [HttpGet]
+    public CustomerModel Get()
     {
-        [HttpGet]
-        public CustomerModel Get()
+        return new CustomerModel
         {
-            return new CustomerModel
-            {
-                Id = 1,
-                Name = "name",
-                Addresses = new List<string> { "address1", "address2"}
-            };
-        }
+            Id = 1,
+            Name = "name",
+            Addresses = new List<string> { "address1", "address2" }
+        };
     }
 }

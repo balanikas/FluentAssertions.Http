@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace SampleApplication.RestModels
+namespace SampleApplication.RestModels;
+
+public class CustomerModel
 {
-    public class CustomerModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public IList<string> Addresses { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public IList<string> Addresses { get; set; }
 }

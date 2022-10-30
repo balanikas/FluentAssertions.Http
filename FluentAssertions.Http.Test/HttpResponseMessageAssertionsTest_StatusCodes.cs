@@ -4,123 +4,122 @@ using System.Net.Http;
 using Xunit;
 using Xunit.Sdk;
 
-namespace FluentAssertions.Http.Test
+namespace FluentAssertions.Http.Test;
+
+public class HttpResponseMessageAssertionsTest_StatusCodes
 {
-    public class HttpResponseMessageAssertionsTest_StatusCodes
+    private readonly HttpResponseMessage _subject;
+
+    public HttpResponseMessageAssertionsTest_StatusCodes()
     {
-        [Fact]
-        public void HaveStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Accepted;
+        _subject = new HttpResponseMessage();
+    }
 
-            Action act = () => _subject.Should().HaveStatusCode(HttpStatusCode.BadGateway);
+    [Fact]
+    public void HaveStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Accepted;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveStatusCode(HttpStatusCode.BadGateway);
 
-        [Fact]
-        public void HaveStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Accepted;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveStatusCode(HttpStatusCode.Accepted);
-        }
+    [Fact]
+    public void HaveStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Accepted;
 
-        [Fact]
-        public void HaveInformationalStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Accepted;
+        _subject.Should().HaveStatusCode(HttpStatusCode.Accepted);
+    }
 
-            Action act = () => _subject.Should().HaveInformationalStatusCode();
+    [Fact]
+    public void HaveInformationalStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Accepted;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveInformationalStatusCode();
 
-        [Fact]
-        public void HaveInformationalStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Continue;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveInformationalStatusCode();
-        }
+    [Fact]
+    public void HaveInformationalStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Continue;
 
-        [Fact]
-        public void HaveSuccessStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.NotFound;
+        _subject.Should().HaveInformationalStatusCode();
+    }
 
-            Action act = () => _subject.Should().HaveSuccessStatusCode();
+    [Fact]
+    public void HaveSuccessStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.NotFound;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveSuccessStatusCode();
 
-        [Fact]
-        public void HaveSuccessStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.NoContent;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveSuccessStatusCode();
-        }
+    [Fact]
+    public void HaveSuccessStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.NoContent;
 
-        [Fact]
-        public void HaveRedirectionStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Created;
+        _subject.Should().HaveSuccessStatusCode();
+    }
 
-            Action act = () => _subject.Should().HaveRedirectionStatusCode();
+    [Fact]
+    public void HaveRedirectionStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Created;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveRedirectionStatusCode();
 
-        [Fact]
-        public void HaveRedirectionStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Redirect;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveRedirectionStatusCode();
-        }
+    [Fact]
+    public void HaveRedirectionStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Redirect;
 
-        [Fact]
-        public void HaveClientErrorStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.ServiceUnavailable;
+        _subject.Should().HaveRedirectionStatusCode();
+    }
 
-            Action act = () => _subject.Should().HaveClientErrorStatusCode();
+    [Fact]
+    public void HaveClientErrorStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.ServiceUnavailable;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveClientErrorStatusCode();
 
-        [Fact]
-        public void HaveClientErrorStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Conflict;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveClientErrorStatusCode();
-        }
+    [Fact]
+    public void HaveClientErrorStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Conflict;
 
-        [Fact]
-        public void HaveServerErrorStatusCode_WhenExpectedToFail_ShouldFail()
-        {
-            _subject.StatusCode = HttpStatusCode.Forbidden;
+        _subject.Should().HaveClientErrorStatusCode();
+    }
 
-            Action act = () => _subject.Should().HaveServerErrorStatusCode();
+    [Fact]
+    public void HaveServerErrorStatusCode_WhenExpectedToFail_ShouldFail()
+    {
+        _subject.StatusCode = HttpStatusCode.Forbidden;
 
-            act.Should().Throw<XunitException>();
-        }
+        Action act = () => _subject.Should().HaveServerErrorStatusCode();
 
-        [Fact]
-        public void HaveServerErrorStatusCode_WhenExpectedToNotFail_ShouldNotFail()
-        {
-            _subject.StatusCode = HttpStatusCode.InternalServerError;
+        act.Should().Throw<XunitException>();
+    }
 
-            _subject.Should().HaveServerErrorStatusCode();
-        }
+    [Fact]
+    public void HaveServerErrorStatusCode_WhenExpectedToNotFail_ShouldNotFail()
+    {
+        _subject.StatusCode = HttpStatusCode.InternalServerError;
 
-        readonly HttpResponseMessage _subject;
-
-        public HttpResponseMessageAssertionsTest_StatusCodes()
-        {
-            _subject = new HttpResponseMessage();
-        }
+        _subject.Should().HaveServerErrorStatusCode();
     }
 }
