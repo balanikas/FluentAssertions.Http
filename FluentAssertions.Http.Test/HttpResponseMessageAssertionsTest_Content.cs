@@ -36,7 +36,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveTypedContent_WhenExpectedNotToFail_ShouldNotFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         _subject.Should().HaveContent(expectedContent);
@@ -45,7 +45,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveTypedContent_WhenExpectedToFail_ShouldFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         Action act = () => _subject.Should().HaveContent(new ModelA { StringProperty = "string", IntProperty = 2 });
@@ -56,7 +56,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveTypedContentWithEquivalencyOptions_WhenExpectedNotToFail_ShouldNotFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 },
@@ -68,7 +68,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveTypedContentWithEquivalencyOptions_WhenExpectedToFail_ShouldFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         Action act = () => _subject.Should().HaveContent(new ModelA { StringProperty = "otherstring", IntProperty = 1 },
@@ -80,7 +80,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveContentWithProperty_WhenExpectedNotToFail_ShouldNotFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 1);
@@ -89,7 +89,7 @@ public class HttpResponseMessageAssertionsTest_Content
     [Fact]
     public void HaveContentWithProperty_WhenExpectedToFail_ShouldFail()
     {
-        var expectedContent = new ModelA { StringProperty = "string", IntProperty = 1 };
+        ModelA expectedContent = new() { StringProperty = "string", IntProperty = 1 };
         _subject.Content = new StringContent(JsonConvert.SerializeObject(expectedContent));
 
         Action act = () => _subject.Should().HaveContentWithProperty<ModelA>(x => x.IntProperty, 2);

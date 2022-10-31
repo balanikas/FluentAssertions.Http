@@ -11,9 +11,8 @@ namespace FluentAssertions.Http
     public class
         HttpResponseMessageAssertions : ReferenceTypeAssertions<HttpResponseMessage, HttpResponseMessageAssertions>
     {
-        public HttpResponseMessageAssertions(HttpResponseMessage instance)
+        public HttpResponseMessageAssertions(HttpResponseMessage instance) : base(instance)
         {
-            Subject = instance;
         }
 
         protected override string Identifier => "HttpResponseMessage";

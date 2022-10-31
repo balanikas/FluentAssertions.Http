@@ -23,7 +23,7 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Startup>>
     {
         var response = await _factory.CreateClient().GetAsync("/api/customers");
 
-        var expected = new CustomerModel { Name = "name", Addresses = new List<string> { "address1", "address2" } };
+        CustomerModel expected = new() { Name = "name", Addresses = new List<string> { "address1", "address2" } };
 
         response.Should()
             .HaveStatusCode(HttpStatusCode.OK)

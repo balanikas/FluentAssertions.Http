@@ -5,16 +5,31 @@
         <Authors>Kristoffer Balanikas</Authors>
         <Company>Kristoffer Balanikas</Company>
         <PackageId>FluentAssertions.Http</PackageId>
-        <PackageTags>fluentassertions, httpresponsemessage, integrationtest</PackageTags>
+        <PackageTags>fluentassertions, httpresponsemessage, integrationtest, dotnet, test</PackageTags>
         <Version>1.0.0-beta1</Version>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/balanikas/FluentAssertions.Http</PackageProjectUrl>
         <RepositoryUrl>https://github.com/balanikas/FluentAssertions.Http</RepositoryUrl>
+        <Description>
+            This library extends the core functionality of FluentAssertions by adding assertions on the HttpResponseMessage class.
+            Fluent assertions quickstarts and tutorials - https://fluentassertions.com
+        </Description>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>libicon.png</PackageIcon>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <!--   source link -->
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentAssertions" Version="5.6.0"/>
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.1"/>
+        <PackageReference Include="FluentAssertions" Version="6.8.0"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+        <None Include="libicon.png" Pack="true" Visible="false" PackagePath=""/>
+        <PackageReference Include="xunit.assert" Version="2.4.2"/>
     </ItemGroup>
 
 </Project>

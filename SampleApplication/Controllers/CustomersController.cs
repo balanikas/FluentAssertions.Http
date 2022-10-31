@@ -11,11 +11,6 @@ public class CustomersController : ControllerBase
     [HttpGet]
     public CustomerModel Get()
     {
-        return new CustomerModel
-        {
-            Id = 1,
-            Name = "name",
-            Addresses = new List<string> { "address1", "address2" }
-        };
+        return new() { Id = 1, Name = "name", Addresses = new List<string> { "address1", "address2" } };
     }
 }
