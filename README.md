@@ -1,6 +1,8 @@
 # FluentAssertions.Http
 Http extensions for FluentAssertions
 
+[![CI](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml/badge.svg)](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml)
+
 ## Usage
 
 ##### Given a response from an http request
