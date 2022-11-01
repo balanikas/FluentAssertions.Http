@@ -2,6 +2,8 @@
 Http extensions for FluentAssertions
 
 [![build and test](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml/badge.svg)](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml)
+[![CodeQL](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/codeql.yml/badge.svg)](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/codeql.yml)
+
 ![Nuget](https://img.shields.io/nuget/v/FluentAssertions.Http)
 ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/FluentAssertions.Http)
 ![Nuget](https://img.shields.io/nuget/dt/FluentAssertions.Http)
