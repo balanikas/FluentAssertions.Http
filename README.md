@@ -1,7 +1,10 @@
 # FluentAssertions.Http
 Http extensions for FluentAssertions
 
-[![CI](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml/badge.svg)](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml)
+[![build and test](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml/badge.svg)](https://github.com/balanikas/FluentAssertions.Http/actions/workflows/dotnet.yml)
+![Nuget](https://img.shields.io/nuget/v/FluentAssertions.Http)
+![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/FluentAssertions.Http)
+![Nuget](https://img.shields.io/nuget/dt/FluentAssertions.Http)
 
 ## Usage
 
