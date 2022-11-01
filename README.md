@@ -5,6 +5,7 @@ Http extensions for FluentAssertions
 ![Nuget](https://img.shields.io/nuget/v/FluentAssertions.Http)
 ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/FluentAssertions.Http)
 ![Nuget](https://img.shields.io/nuget/dt/FluentAssertions.Http)
+[![GitHub stars](https://img.shields.io/github/stars/balanikas/FluentAssertions.Http)](https://github.com/balanikas/FluentAssertions.Http/stargazers)
 
 ## Usage
 
