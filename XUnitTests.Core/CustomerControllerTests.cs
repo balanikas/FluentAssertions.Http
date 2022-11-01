@@ -27,10 +27,6 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Startup>>
 
         response.Should()
             .HaveStatusCode(HttpStatusCode.OK)
-            // .And
-            // .HaveHeaderForTransferEncoding(new TransferCodingHeaderValue("value"))
-            // .And
-            // .HaveHeader("customerHeader", "headerValue")
             .And
             .HaveContent(expected, options => options.Excluding(x => x.Id));
     }

@@ -1,10 +1,15 @@
 ﻿using System.Net.Http;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace FluentAssertions.Http
 {
     public static class HttpResponseMessageExtensions
     {
+        private static readonly JsonSerializerOptions SerializationOptions = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
         internal static string GetContent(this HttpResponseMessage response)
         {
             return response.Content.ReadAsStringAsync().Result;
@@ -12,7 +17,7 @@ namespace FluentAssertions.Http
 
         internal static T GetContentAs<T>(this HttpResponseMessage response)
         {
-            return JsonConvert.DeserializeObject<T>(response.GetContent());
+            return JsonSerializer.Deserialize<T>(response.GetContent(), SerializationOptions);
         }
 
         public static HttpResponseMessageAssertions Should(this HttpResponseMessage instance)

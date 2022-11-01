@@ -20,11 +20,16 @@ public class Program
 
 /* work
 
-- cleanup code
-- add editor config
-- publish to nuget with github actions
+
 - add xmldoc to public api
 - review assert extensions
 - see how multi targeting libs are setup
 - config repo with security/code analysis. i.e. dependabot and codeql
+- nullable feature in lib
+- use build in json srlz if possible
+- versioning: bump to 6.x.x or stay at 1.0.0?
+- add contributing.md, pullrequerst template.md, etc
+- reorganize into folders /src and /test
+- add release notes for every release
+- add github badges
 */
