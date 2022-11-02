@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: FluentAssertions.Http
+  name: FluentAssertions.Http
+  items:
+  - uid: FluentAssertions.Http.HttpResponseMessageAssertions
+    name: HttpResponseMessageAssertions
+  - uid: FluentAssertions.Http.HttpResponseMessageExtensions
+    name: HttpResponseMessageExtensions

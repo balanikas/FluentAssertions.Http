@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: FluentAssertions.Http
+  commentId: N:FluentAssertions.Http
+  id: FluentAssertions.Http
+  children:
+  - FluentAssertions.Http.HttpResponseMessageAssertions
+  - FluentAssertions.Http.HttpResponseMessageExtensions
+  langs:
+  - csharp
+  - vb
+  name: FluentAssertions.Http
+  nameWithType: FluentAssertions.Http
+  fullName: FluentAssertions.Http
+  type: Namespace
+  assemblies:
+  - FluentAssertions.Http
+references:
+- uid: FluentAssertions.Http.HttpResponseMessageAssertions
+  commentId: T:FluentAssertions.Http.HttpResponseMessageAssertions
+  parent: FluentAssertions.Http
+  name: HttpResponseMessageAssertions
+  nameWithType: HttpResponseMessageAssertions
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertions
+- uid: FluentAssertions.Http.HttpResponseMessageExtensions
+  commentId: T:FluentAssertions.Http.HttpResponseMessageExtensions
+  name: HttpResponseMessageExtensions
+  nameWithType: HttpResponseMessageExtensions
+  fullName: FluentAssertions.Http.HttpResponseMessageExtensions
+- uid: FluentAssertions.Http
+  commentId: N:FluentAssertions.Http
+  name: FluentAssertions.Http
+  nameWithType: FluentAssertions.Http
+  fullName: FluentAssertions.Http
