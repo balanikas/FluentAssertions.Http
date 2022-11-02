@@ -9,7 +9,7 @@ using SampleApplication.RestModels;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace XUnitTests.Core;
+namespace SampleApplication.Test;
 
 public class BasicTests : IClassFixture<WebApplicationFactory<Startup>>
 {

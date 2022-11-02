@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAssertions.Http.Test"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication", "SampleApplication\SampleApplication.csproj", "{C25D0DD8-D239-4299-B648-16BAC41DB466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTests.Core", "XUnitTests.Core\XUnitTests.Core.csproj", "{05B4E55C-F985-4312-861F-828D8AC885CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication.Test", "SampleApplication.Test\SampleApplication.Test.csproj", "{05B4E55C-F985-4312-861F-828D8AC885CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -34,6 +34,6 @@ public class Program
 - add github badges
  -https://github.com/fluentassertions/fluentassertions/pull/1737#discussion_r747684369
  - https://github.com/fluentassertions/fluentassertions/pull/1737#discussion_r746812193
- - rename XUnitTests.Core proj
  - status codes and headers done, now fix content and import the github issue suggestion
+ - update main readme usage section
 */
