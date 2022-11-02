@@ -9,6 +9,9 @@ Http extensions for FluentAssertions
 ![Nuget](https://img.shields.io/nuget/dt/FluentAssertions.Http)
 [![GitHub stars](https://img.shields.io/github/stars/balanikas/FluentAssertions.Http)](https://github.com/balanikas/FluentAssertions.Http/stargazers)
 
+## API Docs
+https://balanikas.github.io/FluentAssertions.Http/api/index.html
+
 ## Usage
 
 ##### Given a response from an http request
