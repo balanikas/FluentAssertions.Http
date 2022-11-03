@@ -20,7 +20,7 @@ namespace FluentAssertions.Http
         protected override string Identifier => "HttpResponseMessage";
 
         /// <summary>
-        /// f="HttpStatusCode"/> is equal to the specified <paramref name="expected"/> value.
+        /// f="HttpStatusCode"/> is equal to the specified <paramref name="expected"/> value .
         /// </summary>
         /// <param name="expected">The expected status code <see cref="HttpStatusCode"/></param>
         /// <param name="because">

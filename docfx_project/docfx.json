@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../",
+          "src" : "../",
           "files": [
             "FluentAssertions.Http/**.csproj"
           ]
@@ -49,7 +49,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
