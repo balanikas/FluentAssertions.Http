@@ -35,32 +35,31 @@ https://balanikas.github.io/FluentAssertions.Http/api/index.html
 ```
 #### Headers
 ```csharp
-    //assert header exists
-    response.Should().HaveHeader("headername", "expectedheadervalue");
-    response.Should().HaveHeaderForTransferEncoding(new TransferCodingHeaderValue("value"));
+    //assert content headers
+    response.Should().HaveContentHeader("X-Custom-Header");
+    response.Should().HaveContentHeaderValue(HttpResponseHeader.ContentType, "application/json; charset=utf-8");
+    response.Should().HaveContentHeaderValues(HttpResponseHeader.Allow, new[] { "GET", "PUT" });
+    
+    //assert response headers
+    response.Should().HaveResponseHeader("X-Custom-Header");
+    response.Should().HaveResponseHeaderValue(HttpResponseHeader.AcceptRanges, "range1");
+    response.Should().HaveResponseHeaderValues(HttpResponseHeader.AcceptRanges, new []{"range1","range2"});
 ```    
 #### Content
 ```csharp
-    //assert content by string
-    response.Should().HaveContent("expectedjsonstring");
+    //assert string content
+    response.Should().HaveContentMatching(x => x.StartsWith("hello"));
+    response.Should().HaveContent("hello world");
     
-    //assert content by expected instance
+    //assert typed content
+    response.Should().HaveContentMatching<CustomerModel>(x => x.Name == "Alex" && x.Addresses.Count == 2);
     response.Should().HaveContent<CustomerModel>(expected);
-    
-    //assert content by expected instance, with additional equivalency options.
-    response.Should().HaveContent<CustomerModel>(expected, options => options.Excluding(x => x.Id));
-    
-    //assert content by single property
-    response.Should().HaveContentWithProperty<CustomerModel>(x => x.Name, "expectedname");
+    response.Should().HaveContent<CustomerModel>(expected, o => o.Excluding(x => x.Id)); 
 ```
 #### Combine
 ```csharp
     response.Should()
         .HaveStatusCode(HttpStatusCode.OK)
         .And
-        .HaveHeaderForTransferEncoding(new TransferCodingHeaderValue("value"))
-        .And
-        .HaveHeader("customerHeader", "headerValue")
-        .And
-        .HaveContent<CustomerModel>(expected, options => options.Excluding(x => x.Id));
+        .HaveContent(expected, options => options.Excluding(x => x.Id));
 ```
