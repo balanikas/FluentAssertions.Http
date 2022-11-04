@@ -22,17 +22,6 @@ https://balanikas.github.io/FluentAssertions.Http/api/index.html
 ```csharp
     var expected = new CustomerModel();
 ```
-#### Status codes 
-```csharp
-    //assert http status code
-    response.Should().HaveStatusCode(HttpStatusCode.Created);
-    
-    //assert http status code range
-    response.Should().HaveServerErrorStatusCode();
-    response.Should().HaveRedirectionStatusCode();
-    response.Should().HaveClientErrorStatusCode();
-    response.Should().HaveSuccessStatusCode();
-```
 #### Headers
 ```csharp
     //assert content headers
@@ -59,7 +48,7 @@ https://balanikas.github.io/FluentAssertions.Http/api/index.html
 #### Combine
 ```csharp
     response.Should()
-        .HaveStatusCode(HttpStatusCode.OK)
+        .HaveResponseHeader("X-Custom-Header")
         .And
         .HaveContent(expected, options => options.Excluding(x => x.Id));
 ```

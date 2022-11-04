@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace FluentAssertions.Http
+namespace FluentAssertions.Http.Internal
 {
     internal static class HttpResponseHeaderExtensions
     {
