@@ -1,0 +1,206 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: FluentAssertions.Http
+  name: FluentAssertions.Http
+  href: api/FluentAssertions.Http.html
+  commentId: N:FluentAssertions.Http
+  fullName: FluentAssertions.Http
+  nameWithType: FluentAssertions.Http
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions
+  name: HttpResponseMessageAssertionsExtensions
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html
+  commentId: T:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions
+  nameWithType: HttpResponseMessageAssertionsExtensions
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name: HaveContent(HttpResponseMessageAssertions, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContent_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name.vb: HaveContent(HttpResponseMessageAssertions, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContent(HttpResponseMessageAssertions, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContent(HttpResponseMessageAssertions, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent*
+  name: HaveContent
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContent_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContent
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,``0,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[])
+  name: HaveContent<T>(HttpResponseMessageAssertions, T, Func<EquivalencyAssertionOptions<T>, EquivalencyAssertionOptions<T>>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContent__1_FluentAssertions_Primitives_HttpResponseMessageAssertions___0_System_Func_FluentAssertions_Equivalency_EquivalencyAssertionOptions___0__FluentAssertions_Equivalency_EquivalencyAssertionOptions___0___System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,``0,System.Func{FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0},FluentAssertions.Equivalency.EquivalencyAssertionOptions{``0}},System.String,System.Object[])
+  name.vb: HaveContent(Of T)(HttpResponseMessageAssertions, T, Func(Of EquivalencyAssertionOptions(Of T), EquivalencyAssertionOptions(Of T)), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent<T>(FluentAssertions.Primitives.HttpResponseMessageAssertions, T, System.Func<FluentAssertions.Equivalency.EquivalencyAssertionOptions<T>, FluentAssertions.Equivalency.EquivalencyAssertionOptions<T>>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(Of T)(FluentAssertions.Primitives.HttpResponseMessageAssertions, T, System.Func(Of FluentAssertions.Equivalency.EquivalencyAssertionOptions(Of T), FluentAssertions.Equivalency.EquivalencyAssertionOptions(Of T)), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContent<T>(HttpResponseMessageAssertions, T, Func<EquivalencyAssertionOptions<T>, EquivalencyAssertionOptions<T>>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContent(Of T)(HttpResponseMessageAssertions, T, Func(Of EquivalencyAssertionOptions(Of T), EquivalencyAssertionOptions(Of T)), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,``0,System.String,System.Object[])
+  name: HaveContent<T>(HttpResponseMessageAssertions, T, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContent__1_FluentAssertions_Primitives_HttpResponseMessageAssertions___0_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,``0,System.String,System.Object[])
+  name.vb: HaveContent(Of T)(HttpResponseMessageAssertions, T, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent<T>(FluentAssertions.Primitives.HttpResponseMessageAssertions, T, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContent(Of T)(FluentAssertions.Primitives.HttpResponseMessageAssertions, T, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContent<T>(HttpResponseMessageAssertions, T, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContent(Of T)(HttpResponseMessageAssertions, T, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name: HaveContentHeader(HttpResponseMessageAssertions, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeader_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name.vb: HaveContentHeader(HttpResponseMessageAssertions, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeader(HttpResponseMessageAssertions, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentHeader(HttpResponseMessageAssertions, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader*
+  name: HaveContentHeader
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeader_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeader
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeader
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.String,System.String,System.Object[])
+  name: HaveContentHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValue_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Net_HttpResponseHeader_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.String,System.String,System.Object[])
+  name.vb: HaveContentHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.String,System.Object[])
+  name: HaveContentHeaderValue(HttpResponseMessageAssertions, String, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValue_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.String,System.Object[])
+  name.vb: HaveContentHeaderValue(HttpResponseMessageAssertions, String, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(HttpResponseMessageAssertions, String, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue(HttpResponseMessageAssertions, String, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue*
+  name: HaveContentHeaderValue
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValue_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValue
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name: HaveContentHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable<String>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValues_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Net_HttpResponseHeader_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name.vb: HaveContentHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable(Of String), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable<String>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable(Of String), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name: HaveContentHeaderValues(HttpResponseMessageAssertions, String, IEnumerable<String>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValues_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name.vb: HaveContentHeaderValues(HttpResponseMessageAssertions, String, IEnumerable(Of String), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(HttpResponseMessageAssertions, String, IEnumerable<String>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues(HttpResponseMessageAssertions, String, IEnumerable(Of String), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues*
+  name: HaveContentHeaderValues
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentHeaderValues_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentHeaderValues
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Linq.Expressions.Expression{System.Func{System.String,System.Boolean}},System.String,System.Object[])
+  name: HaveContentMatching(HttpResponseMessageAssertions, Expression<Func<String, Boolean>>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentMatching_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Linq_Expressions_Expression_System_Func_System_String_System_Boolean___System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Linq.Expressions.Expression{System.Func{System.String,System.Boolean}},System.String,System.Object[])
+  name.vb: HaveContentMatching(HttpResponseMessageAssertions, Expression(Of Func(Of String, Boolean)), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Linq.Expressions.Expression<System.Func<System.String, System.Boolean>>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Linq.Expressions.Expression(Of System.Func(Of System.String, System.Boolean)), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentMatching(HttpResponseMessageAssertions, Expression<Func<String, Boolean>>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentMatching(HttpResponseMessageAssertions, Expression(Of Func(Of String, Boolean)), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching*
+  name: HaveContentMatching
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentMatching_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentMatching
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Object[])
+  name: HaveContentMatching<T>(HttpResponseMessageAssertions, Expression<Func<T, Boolean>>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveContentMatching__1_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching``1(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Object[])
+  name.vb: HaveContentMatching(Of T)(HttpResponseMessageAssertions, Expression(Of Func(Of T, Boolean)), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching<T>(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveContentMatching(Of T)(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveContentMatching<T>(HttpResponseMessageAssertions, Expression<Func<T, Boolean>>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveContentMatching(Of T)(HttpResponseMessageAssertions, Expression(Of Func(Of T, Boolean)), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name: HaveResponseHeader(HttpResponseMessageAssertions, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeader_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.Object[])
+  name.vb: HaveResponseHeader(HttpResponseMessageAssertions, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeader(HttpResponseMessageAssertions, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveResponseHeader(HttpResponseMessageAssertions, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader*
+  name: HaveResponseHeader
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeader_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeader
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeader
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.String,System.String,System.Object[])
+  name: HaveResponseHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValue_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Net_HttpResponseHeader_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.String,System.String,System.Object[])
+  name.vb: HaveResponseHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(HttpResponseMessageAssertions, HttpResponseHeader, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.String,System.Object[])
+  name: HaveResponseHeaderValue(HttpResponseMessageAssertions, String, String, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValue_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_String_System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.String,System.String,System.Object[])
+  name.vb: HaveResponseHeaderValue(HttpResponseMessageAssertions, String, String, String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.String, System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(HttpResponseMessageAssertions, String, String, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue(HttpResponseMessageAssertions, String, String, String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue*
+  name: HaveResponseHeaderValue
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValue_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValue
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name: HaveResponseHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable<String>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValues_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_Net_HttpResponseHeader_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.Net.HttpResponseHeader,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name.vb: HaveResponseHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable(Of String), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.Net.HttpResponseHeader, System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable<String>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(HttpResponseMessageAssertions, HttpResponseHeader, IEnumerable(Of String), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name: HaveResponseHeaderValues(HttpResponseMessageAssertions, String, IEnumerable<String>, String, Object[])
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValues_FluentAssertions_Primitives_HttpResponseMessageAssertions_System_String_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object___
+  commentId: M:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.Object[])
+  name.vb: HaveResponseHeaderValues(HttpResponseMessageAssertions, String, IEnumerable(Of String), String, Object())
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object[])
+  fullName.vb: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(FluentAssertions.Primitives.HttpResponseMessageAssertions, System.String, System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object())
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(HttpResponseMessageAssertions, String, IEnumerable<String>, String, Object[])
+  nameWithType.vb: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues(HttpResponseMessageAssertions, String, IEnumerable(Of String), String, Object())
+- uid: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues*
+  name: HaveResponseHeaderValues
+  href: api/FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.html#FluentAssertions_Http_HttpResponseMessageAssertionsExtensions_HaveResponseHeaderValues_
+  commentId: Overload:FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues
+  isSpec: "True"
+  fullName: FluentAssertions.Http.HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues
+  nameWithType: HttpResponseMessageAssertionsExtensions.HaveResponseHeaderValues
